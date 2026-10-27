@@ -1,0 +1,14 @@
+{
+  "pylint": {
+    "command": "python -m pylint --persistent=n electricity_bill.py",
+    "exit_code": 0
+  },
+  "bandit": {
+    "command": "python -m bandit -r electricity_bill.py",
+    "exit_code": 0
+  },
+  "flake8": {
+    "command": "python -m flake8 electricity_bill.py",
+    "exit_code": 0
+  }
+}

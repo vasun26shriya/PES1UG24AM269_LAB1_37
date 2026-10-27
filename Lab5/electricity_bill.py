@@ -51,7 +51,7 @@ def generate_bill(meter_id, units, tax_rate=0.05, extras=None):
     if extras is None:
         extras = {}
     amount = energy_charge(units) + FIXED_CHARGE + sum(extras.values())
-    bill = {"meter" : meter_id, "units": units,
+    bill = {"meter": meter_id, "units": units,
             "amount": round(amount * (1 + tax_rate), 2)}
     BILLS.append(bill)
     return bill
@@ -85,7 +85,7 @@ def sync_meter(meter_ip):
 
 
 def main():
-    """Run the supplied billing demonstration without accumulating old bills."""
+    """Run the billing demonstration without accumulating old bills."""
     BILLS.clear()
     for meter_id, previous, current in read_meters(METER_XML):
         units = calculate_units(previous, current)
@@ -97,7 +97,7 @@ def main():
     highest = max(BILLS, key=lambda bill: bill["amount"])
     print("Highest bill:", highest["meter"])
     print("Average bill:", average_bill())
-    total=sum(bill["amount"] for bill in BILLS)
+    total = sum(bill["amount"] for bill in BILLS)
     print("Total billed:", round(total, 2))
     save_bills()
     print("Saved", len(BILLS), "bills to bills.json")

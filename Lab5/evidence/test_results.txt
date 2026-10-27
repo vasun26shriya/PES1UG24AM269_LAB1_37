@@ -1,0 +1,15 @@
+test_command_injection_address_rejected (__main__.BillingChecks.test_command_injection_address_rejected) ... ok
+test_empty_average_and_default_fees (__main__.BillingChecks.test_empty_average_and_default_fees) ... ok
+test_entity_payload_rejected (__main__.BillingChecks.test_entity_payload_rejected) ... ok
+test_import_has_no_demo_output (__main__.BillingChecks.test_import_has_no_demo_output) ... ok
+test_json_persistence (__main__.BillingChecks.test_json_persistence) ... ok
+test_reversed_reading (__main__.BillingChecks.test_reversed_reading) ... ok
+test_slab_boundaries (__main__.BillingChecks.test_slab_boundaries) ... ok
+test_sync_http_error_closes (__main__.BillingChecks.test_sync_http_error_closes) ... ok
+test_sync_uses_https_and_closes (__main__.BillingChecks.test_sync_uses_https_and_closes) ... ok
+test_tax_and_extras (__main__.BillingChecks.test_tax_and_extras) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.045s
+
+OK

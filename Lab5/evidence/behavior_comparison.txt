@@ -1,0 +1,3 @@
+PASS: Original and final demonstration stdout are identical.
+PASS: Original and final bills JSON have identical values.
+PASS: 10 regression tests passed.

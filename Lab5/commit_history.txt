@@ -1,0 +1,8 @@
+Original local assignment commits (before upload).
+GitHub upload commits have new hashes because they follow the
+existing Labs 1-4 repository history.
+
+c8f5138 fix: resolve Flake8 formatting and finalize lab deliverables
+035aac9 fix: address Pylint quality and correctness findings
+7a9d78d fix: resolve Bandit security findings
+a48c8e9 Initial commit
